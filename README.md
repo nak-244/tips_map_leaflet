@@ -8,7 +8,7 @@
 
 ### index.html
 
-~~~html
+~~~ html
 <!DOCTYPE html>
 <html>
 <head>
@@ -37,7 +37,7 @@
 
 ### app.js
 
-~~~javascript
+~~~ javascript
 
 
   //
