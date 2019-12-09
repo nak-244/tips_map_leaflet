@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="assets/img/fav.png">
+  <title>北海道エリアの転職・求人・お仕事探しは「しごとら」｜オープンループパートナーズ</title>
+  <meta name="description" content="北海道エリアの転職・求人・お仕事探しは「しごとら」。専任のキャリアアドバイザーがあなたを転職成功へと導きます。【完全無料サービス】">
+  <!-- 追加データ -->
+  <link rel="stylesheet" href="assets/css/aquamarine.css">
+  <link rel="stylesheet" href="assets/css/common.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <script src="assets/js/all.js"></script>
+  <script src="assets/js/search.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin="">
+  <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
+  <!-- //追加データ -->
+</head>
+
+<body>
+  <div class="hero">
+    <!-- pcヘッダー -->
+    <div class="border-bottom pc">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="small text-muted my-0">北海道エリアの転職・求人・お仕事探しは「しごとら」</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //pcヘッダー -->
+    <!-- SP用ヘッダー -->
+    <div class="border-bottom sp">
+      <div class="container">
+        <div class="row small">
+          <div class="col-12">
+            <h1 class="small text-muted my-0">北海道エリアの転職・求人・お仕事探しは「しごとら」</h1>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="p-2 col-4">
+            <img class="img-fluid d-block mx-auto" src="https://www.olp.co.jp/jobsite_assets/img/sigotora/logo.png">
+          </div>
+          <div class="p-2 col-4">
+          </div>
+          <div class="p-2 col-4 d-flex justify-content-center align-items-center">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //SP用ヘッダー -->
+  </div>
+  <!-- 固定MENU -->
+  <!-- pc -->
+  <div class="pc">
+    <header class="site-header border-bottom bg-white">
+      <div class="py-1">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-5 col-sm-5">
+              <ul class="list-inline mb-0 text-left ">
+                <li class="list-inline-item text-center small"> <a class="nav-link p-0" href="https://sigotora.jp/">&nbsp;<i class="fa d-inline fa-2x fa-home">&nbsp;</i><br>HOME</a> </li>
+                <li class="list-inline-item text-center small"><a class="nav-link p-0" href="https://sigotora.jp/index.cfm?fuseaction=job.srchform">&nbsp;<i class="fa d-inline fa-search fa-2x">&nbsp;</i><br>お仕事を探す</a></li>
+                <li class="list-inline-item text-center small"><a class="nav-link p-0" href="https://sigotora.jp/index.cfm?fuseaction=contents.fcts&amp;cid=216">&nbsp;<i class="fa d-inline fa-building fa-2x">&nbsp;</i><br>支店一覧</a></li>
+              </ul>
+            </div>
+            <div class="col-md-2 col-sm-2"><img class="img-fluid d-block mx-auto" src="https://www.olp.co.jp/jobsite_assets/img/sigotora/logo.png"></div>
+            <div class="col-md-5 col-sm-5">
+              <ul class="list-inline mb-0 text-right">
+                <li class="list-inline-item text-center small">&nbsp;</li>
+                <li class="list-inline-item text-center small"><a class="nav-link p-0" href="https://www.s-mypage.com/mypage/login/user_login?cp=openloop" target="_blank">&nbsp;<i class="fa d-inline fa-user-circle fa-2x">&nbsp;</i><br>マイページ</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  </div>
+  <!-- //pc -->
+  <!-- SP -->
+  <div class="sp" style="">
+    <header class="site-header border-bottom bg-white">
+      <div class="container py-1 px-2">
+        <div class="row small">
+          <div class="col-8">
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item text-center small mx-0"> <a class="nav-link p-1" href="https://sigotora.jp/">&nbsp;<i class="fa d-inline fa-home fa-2x">&nbsp;</i><br>HOME</a> </li>
+              <li class="list-inline-item text-center small mx-0"><a class="nav-link p-1" href="https://sigotora.jp/index.cfm?fuseaction=job.srchform">&nbsp;<i class="fa d-inline fa-search fa-2x">&nbsp;</i><br>仕事検索</a></li>
+              <li class="list-inline-item text-center small mx-0"><a class="nav-link p-1" href="https://sigotora.jp/index.cfm?fuseaction=contents.fcts&amp;cid=216">&nbsp;<i class="fa d-inline fa-building fa-2x">&nbsp;</i><br>支店一覧</a></li>
+            </ul>
+          </div>
+          <div class="col-4 text-center">
+            <ul class="list-inline mb-0 text-right">
+              <li class="list-inline-item small border-left text-center"><a class="nav-link p-1" href="https://www.s-mypage.com/mypage/login/user_login?cp=openloop" target="_blank">&nbsp;<i class="fa d-inline fa-user-circle fa-2x">&nbsp;</i><br>マイページ</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+  </div>
+  <!-- //SP -->
+  <!-- //固定MENU -->
+  <div class="py-5 pc" style="	background-image: url(&quot;https://www.olp.co.jp/jobsite_assets/img/sigotora/bg_headarea_02.jpg&quot;);	background-size: auto;	background-position: top left;	background-repeat: repeat;">
+    <div class="container">
+      <div class="row mt-5">
+        <div class="my-5 col-md-8 p-4" style="	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9));	background-position: top left;	background-size: 100%;	background-repeat: repeat;">
+          <h1 style="">北海道エリアの</h1>
+          <h1 style="" class="mb-5">転職・求人・お仕事探しは「しごとら」</h1>
+          <p style="">北海道の求人を紹介！</p>
+          <p style="">北海道の求人情報ならアルバイト・バイト・パート・正社員・派遣の「しごとら」！</p>
+          <p style="">求人情報は毎日更新！豊富な検索条件から北海道で自分にぴったりの求人を見つけて応募しよう！</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="sp" style="	background-image: url(&quot;https://www.olp.co.jp/jobsite_assets/img/sigotora/bg_headarea_02.jpg&quot;);	background-size: auto;	background-position: center center;	background-repeat: repeat;">
+    <div class="container">
+      <div class="row mt-5">
+        <div class="my-5 col-md-8 py-4" style="	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));	background-position: top left;	background-size: 100%;	background-repeat: repeat;">
+          <h3 style="">北海道エリアの</h3>
+          <h3 style="" class="">転職・求人・お仕事探しは「しごとら」</h3>
+          <p style="">北海道の求人を紹介！</p>
+          <p style="">北海道の求人情報ならアルバイト・バイト・パート・正社員・派遣の「しごとら」！</p>
+          <p style="">求人情報は毎日更新！豊富な検索条件から北海道で自分にぴったりの求人を見つけて応募しよう！</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-3 my-5 pc" style="">
+    <div class="container">
+      <div class="row py-3 mx-1">
+        <div class="col-md-12">
+          <h3 class="text-primary">北海道の求人情報を探す</h3>
+        </div>
+        <div class="col-md-4 col-sm-12 my-3 px-3">
+          <p class="text-left">職種</p>
+          <select id="srh_jobtype_param" class="custom-select rounded-0">
+            <option value="">---</option>
+            <option value="1">オフィス事務</option>
+            <option value="2">営業</option>
+            <option value="3">IT・エンジニア</option>
+            <option value="4">WEB・クリエイター</option>
+            <option value="5">販売</option>
+            <option value="6">イベント</option>
+            <option value="7">接客・サービス</option>
+            <option value="8">飲食・フード</option>
+            <option value="9">軽作業</option>
+            <option value="10">製造</option>
+            <option value="11">配送・ドライバー</option>
+            <option value="12">医療・介護・福祉・保育・栄養士</option>
+            <option value="13">講師・インストラクター</option>
+            <option value="14">美容・ヘルスケア</option>
+            <option value="15">農業・酪農</option>
+            <option value="16">漁業・水産</option>
+          </select>
+        </div>
+        <div class="col-md-6 col-sm-12 my-3 px-3">
+          <p class="text-left">キーワード</p>
+          <input type="text" class="form-control rounded-0 w-100" id="sfw" placeholder="市区町村・資格など">
+        </div>
+        <div class="col-md-2 col-sm-12 my-3 d-flex flex-column-reverse px-3"><a class="btn btn-primary rounded-0" href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_area_param=1" id="test">検索</a></div>
+      </div>
+    </div>
+  </div>
+  <div class="py-3 my-5 sp" style="">
+    <div class="container">
+      <div class="row py-3 mx-1">
+        <div class="col-md-12">
+          <h3 class="text-primary">北海道の求人情報を探す</h3>
+        </div>
+        <div class="col-md-4 col-sm-12 my-3 px-0">
+          <p class="text-left">職種</p>
+          <select id="srh_jobtype_param" class="custom-select rounded-0">
+            <option value="">---</option>
+            <option value="1">オフィス事務</option>
+            <option value="2">営業</option>
+            <option value="3">IT・エンジニア</option>
+            <option value="4">WEB・クリエイター</option>
+            <option value="5">販売</option>
+            <option value="6">イベント</option>
+            <option value="7">接客・サービス</option>
+            <option value="8">飲食・フード</option>
+            <option value="9">軽作業</option>
+            <option value="10">製造</option>
+            <option value="11">配送・ドライバー</option>
+            <option value="12">医療・介護・福祉・保育・栄養士</option>
+            <option value="13">講師・インストラクター</option>
+            <option value="14">美容・ヘルスケア</option>
+            <option value="15">農業・酪農</option>
+            <option value="16">漁業・水産</option>
+          </select>
+        </div>
+        <div class="col-md-6 col-sm-12 my-3 px-0">
+          <p class="text-left">キーワード</p>
+          <input type="text" class="form-control rounded-0 w-100" id="sfw" placeholder="市区町村・資格など">
+        </div>
+        <div class="col-md-2 col-sm-12 my-3 d-flex flex-column-reverse px-0"><a class="btn btn-primary rounded-0 mt-4 py-2" href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_area_param=1" id="test">検索</a></div>
+      </div>
+    </div>
+  </div>
+  <div class="py-3 bg-light pc" style="">
+    <div class="container">
+      <div class="row py-3 mx-1">
+        <div class="col-md-12">
+          <h3 class="text-primary">お近くの支店を探す</h3>
+          <p>ご希望に合わせたお仕事をご紹介いたします。まずはお気軽に無料登録会へご参加ください。</p>
+        </div>
+      </div>
+      <div class="row py-3 mx-1">
+        <div class="col-md-12">
+          <!-- 地図格納要素 (ここに地図を描画) -->
+          <div id="map" class="border"></div>
+          <script src="assets/js/app.js"></script>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-3 bg-light sp" style="">
+    <div class="container">
+      <div class="row py-3 mx-1">
+        <div class="col-md-12">
+          <h3 class="text-primary">お近くの支店を探す</h3>
+          <p>ご希望に合わせたお仕事をご紹介いたします。まずはお気軽に無料登録会へご参加ください。</p>
+        </div>
+      </div>
+      <div class="row py-0 no-gutter">
+        <div class="col-md-12">
+          <table class="table col-head-type1 border-bottom mb-5">
+            <tbody>
+              <tr>
+                <th>CRM札幌支店</th>
+                <td>北海道札幌市中央区北1条西3丁目2−14&nbsp;井門札幌ビル9F<br>TEL : 011-219-7625<br><a class="btn btn-sm btn-primary" href="https://maps.google.com/maps?q=北海道札幌市中央区北１条西３丁目２−１４" target="_blank">Googleマップで開く </a></td>
+              </tr>
+              <tr>
+                <th>札幌支店</th>
+                <td>北海道札幌市中央区北1条西3丁目2−14&nbsp;井門札幌ビル9F<br>TEL : 011-210-1190<br><a class="btn btn-sm btn-primary" href="https://maps.google.com/maps?q=北海道札幌市中央区北１条西３丁目２−１４" target="_blank">Googleマップで開く </a></td>
+              </tr>
+              <tr>
+                <th>新札幌支店（おしごと窓口）</th>
+                <td>北海道札幌市厚別区厚別中央2条5丁目7&nbsp;カテプリ2F<br>TEL : 011-890-8630<br><a class="btn btn-sm btn-primary" href="https://maps.google.com/maps?q=北海道札幌市厚別区厚別中央２条５丁目７" target="_blank">Googleマップで開く </a></td>
+              </tr>
+              <tr>
+                <th>旭川支店</th>
+                <td>北海道旭川市宮下通9-780-1&nbsp;旭川駅前第一ビル4F<br>TEL : 0166-26-7211<br><a class="btn btn-sm btn-primary" href="https://maps.google.com/maps?q=北海道旭川市宮下通9-780-1" target="_blank">Googleマップで開く </a></td>
+              </tr>
+              <tr>
+                <th>千歳支店</th>
+                <td>北海道千歳市千代田町4-14&nbsp;千歳第一ビルディング3F<br>TEL : 0123-23-6830<br><a class="btn btn-sm btn-primary" href="https://maps.google.com/maps?q=北海道千歳市千代田町4-14" target="_blank">Googleマップで開く </a></td>
+              </tr>
+              <tr>
+                <th>北見支店</th>
+                <td>北海道北見市常盤町4-16-3&nbsp;トキワビレッジ2F<br>TEL : 0157-31-2400<br><a class="btn btn-sm btn-primary" href="https://maps.google.com/maps?q=北海道北見市常盤町4-16-3" target="_blank">Googleマップで開く </a></td>
+              </tr>
+              <tr>
+                <th>道東支店</th>
+                <td>北海道釧路市黒金町11丁目2番1号&nbsp;黒金町MFビル4F<br>TEL : 0154-25-9260<br><a class="btn btn-sm btn-primary" href="https://maps.google.com/maps?q=北海道釧路市黒金町11丁目2番1号" target="_blank">Googleマップで開く </a></td>
+              </tr>
+              <tr>
+                <th>メディカル札幌支店</th>
+                <td>北海道札幌市中央区北1条西3丁目2−14&nbsp;井門札幌ビル9F<br>TEL : 011-798-9531<br><a class="btn btn-sm btn-primary" href="https://maps.google.com/maps?q=北海道札幌市中央区北１条西３丁目２−１４" target="_blank">Googleマップで開く </a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-5">
+    <div class="container">
+      <div class="row alpha">
+        <div class="col-md-12">
+          <h3 class="text-primary">支店からのお知らせ</h3>
+        </div>
+        <div class="col-md-4 col-12 p-3 mb-3">
+          <a href="#"><img class="img-fluid d-block" src="assets/img/news/chikaho.jpg"></a>
+          <p class="mt-3 mb-1"><span class="badge badge-pill badge-primary">CRM札幌支店</span></p>
+          <h5 class="mt-0 mb-3">お仕事相談会開催します</h5>
+          <p>2020年2月、地下歩行空間チ・カ・ホ（大通駅側）にてマイナビバイト主催お仕事登録相談会に出展いたします。</p><a href="#" class="btn btn-outline-primary btn-block">詳しくはこちら</a>
+        </div>
+        <div class="col-md-4 col-12 p-3 mb-3">
+          <a href="#"><img class="img-fluid d-block" src="assets/img/news/line.png"></a>
+          <p class="mt-3 mb-1"><span class="badge badge-pill badge-primary">新札幌支店</span></p>
+          <h5 class="mt-0 mb-3">LINEアカウントはじめました</h5>
+          <p>新札幌支店では、LINE公式アカウントをはじめました。オススメの求人情報などを先行配信いたします。</p><a href="#" class="btn btn-outline-primary btn-block">詳しくはこちら</a>
+        </div>
+        <div class="col-md-4 col-12 p-3">
+          <a href="#"><img class="img-fluid d-block" src="assets/img/news/card.jpg"></a>
+          <p class="mt-3 mb-1"><span class="badge badge-pill badge-primary">旭川支店</span></p>
+          <h5 class="mt-0 mb-3">クオカードプレゼント</h5>
+          <p>旭川支店に初回スタッフ登録をしていただいた方へ、先着100名限定でクオカードをプレゼントいたします。</p><a href="#" class="btn btn-outline-primary btn-block">詳しくはこちら</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-5 text-left bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="text-primary">職種・業界特集</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 p-1 col-md-4 col-12 col-sm-12">
+          <div class="card special">
+            <a href="https://sigotora.jp/index.cfm?fuseaction=contents.fcts&amp;cid=223" target="_blank"></a>
+            <div class="card-body bg-white border p-2"> <img class="img-fluid d-block mb-3 mx-auto img-thumbnail" src="https://olp.co.jp/assets/img/member/search/call.jpg">
+              <p>コールセンター</p>
+              <p class="mb-0 small">コールセンターのお仕事の内容から、勤務を通じて身につけられるスキルのこと、研修内容について、勤務時の服装などをわかりやすく説明いたします。</p>
+              <p class="mb-0 small text-right"><i class="fa d-inline fa-angle-double-right">&nbsp;</i>詳しくはこちら</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 p-1 col-md-4 col-12 col-sm-12">
+          <div class="card special">
+            <a href="https://sigotora.jp/index.cfm?fuseaction=contents.fcts&amp;cid=225" target="_blank"></a>
+            <div class="card-body bg-white border p-2"> <img class="img-fluid d-block mb-3 mx-auto img-thumbnail" src="https://olp.co.jp/assets/img/member/search/seizo.jpg">
+              <p>製造業</p>
+              <p class="mb-0 small">製造業は、サービス業と異なり、勤務する時間が決まっていることが多いので、ご自身の予定が立てやすく、収入の予測や働き方の設計がしやすいのが特徴です。</p>
+              <p class="mb-0 small text-right"><i class="fa d-inline fa-angle-double-right">&nbsp;</i>詳しくはこちら</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 p-1 col-md-4 col-12 col-sm-12">
+          <div class="card special">
+            <a href="https://sigotora.jp/index.cfm?fuseaction=contents.fcts&amp;cid=232" target="_blank"></a>
+            <div class="card-body bg-white border p-2"> <img class="img-fluid d-block mb-3 mx-auto img-thumbnail" src="https://olp.co.jp/assets/img/member/search/hannbai.jpg">
+              <p>販売職</p>
+              <p class="mb-0 small">来店されたお客様に商品をおすすめしたり、お客様の悩みに合わせて商品を選んだり。お客様とコミュニケーションを取る機会が多い仕事です。</p>
+              <p class="mb-0 small text-right"><i class="fa d-inline fa-angle-double-right">&nbsp;</i>詳しくはこちら</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-5 text-left">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="text-primary">職種から探す</h3>
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col-md-12 px-0">
+          <table class="table table-bordered tbl-r04">
+            <tbody class="table-light">
+              <tr>
+                <td>
+                  <div class="media special">
+                    <a href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_jobtype_param=1" target="_blank"></a>
+                    <img class="d-flex mr-3 pc" alt="オフィス事務" src="https://olp.co.jp/assets/img/member/search/cover01.jpg" width="50">
+                    <div class="media-body">
+                      <p class="text-primary">オフィス事務</p>
+                      <ul class="list-inline small">
+                        <li class="list-inline-item">一般事務</li>
+                        <li class="list-inline-item">営業事務</li>
+                        <li class="list-inline-item">データ入力</li>
+                        <li class="list-inline-item">受付</li>
+                        <li class="list-inline-item">秘書</li>
+                        <li class="list-inline-item">人事</li>
+                        <li class="list-inline-item">総務</li>
+                        <li class="list-inline-item">コールセンター管理</li>
+                        <li class="list-inline-item">経理</li>
+                        <li class="list-inline-item">財務</li>
+                        <li class="list-inline-item">など</li>
+                      </ul>
+                    </div>
+                    <i class="fa fa-fw text-primary fa-check-square-o fa-angle-right fa-lg pull-right mt-4"></i>
+                  </div>
+                </td>
+                <td>
+                  <div class="media special">
+                    <a href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_jobtype_param=2" target="_blank"></a>
+                    <img class="d-flex mr-3 pc" alt="営業" src="https://olp.co.jp/assets/img/member/search/cover02.jpg" width="50">
+                    <div class="media-body">
+                      <p class="text-primary">営業</p>
+                      <ul class="list-inline small">
+                        <li class="list-inline-item">企画営業</li>
+                        <li class="list-inline-item">ルートセールス</li>
+                        <li class="list-inline-item">ラウンダー</li>
+                        <li class="list-inline-item">テレアポ</li>
+                        <li class="list-inline-item">など</li>
+                      </ul>
+                    </div>
+                    <i class="fa fa-fw text-primary fa-check-square-o fa-angle-right fa-lg pull-right mt-4"></i>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="media special">
+                    <a href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_jobtype_param=3" target="_blank"></a>
+                    <img class="d-flex mr-3 pc" alt="IT・エンジニア" src="https://olp.co.jp/assets/img/member/search/cover03.jpg" width="50">
+                    <div class="media-body">
+                      <p class="text-primary">IT・エンジニア</p>
+                      <ul class="list-inline small">
+                        <li class="list-inline-item">SE</li>
+                        <li class="list-inline-item">ネットワークエンジニア</li>
+                        <li class="list-inline-item">CADオペレーター</li>
+                        <li class="list-inline-item">評価・テスト</li>
+                        <li class="list-inline-item">ヘルプデスク</li>
+                        <li class="list-inline-item">など</li>
+                      </ul>
+                    </div>
+                    <i class="fa fa-fw text-primary fa-check-square-o fa-angle-right fa-lg pull-right mt-4"></i>
+                  </div>
+                </td>
+                <td>
+                  <div class="media special">
+                    <a href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_jobtype_param=4" target="_blank"></a>
+                    <img class="d-flex mr-3 pc" alt="WEB・クリエイター" src="https://olp.co.jp/assets/img/member/search/cover04.jpg" width="50">
+                    <div class="media-body">
+                      <p class="text-primary">WEB・クリエイター</p>
+                      <ul class="list-inline small">
+                        <li class="list-inline-item">WEB制作</li>
+                        <li class="list-inline-item">WEB運用</li>
+                        <li class="list-inline-item">WEBディレクター</li>
+                        <li class="list-inline-item">WEBデザイナー</li>
+                        <li class="list-inline-item">など</li>
+                      </ul>
+                    </div>
+                    <i class="fa fa-fw text-primary fa-check-square-o fa-angle-right fa-lg pull-right mt-4"></i>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="media special">
+                    <a href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_jobtype_param=5" target="_blank"></a>
+                    <img class="d-flex mr-3 pc" alt="販売" src="https://olp.co.jp/assets/img/member/search/cover05.jpg" width="50">
+                    <div class="media-body">
+                      <p class="text-primary">販売</p>
+                      <ul class="list-inline small">
+                        <li class="list-inline-item">携帯販売</li>
+                        <li class="list-inline-item">販売スタッフ</li>
+                        <li class="list-inline-item">コスメ販売</li>
+                        <li class="list-inline-item">など</li>
+                      </ul>
+                    </div>
+                    <i class="fa fa-fw text-primary fa-check-square-o fa-angle-right fa-lg pull-right mt-4"></i>
+                  </div>
+                </td>
+                <td>
+                  <div class="media special">
+                    <a href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_jobtype_param=6" target="_blank"></a>
+                    <img class="d-flex mr-3 pc" alt="イベント" src="https://olp.co.jp/assets/img/member/search/cover06.jpg" width="50">
+                    <div class="media-body">
+                      <p class="text-primary">イベント</p>
+                      <ul class="list-inline small">
+                        <li class="list-inline-item">キャンペーンスタッフ</li>
+                        <li class="list-inline-item">イベントスタッフ</li>
+                        <li class="list-inline-item">など</li>
+                      </ul>
+                    </div>
+                    <i class="fa fa-fw text-primary fa-check-square-o fa-angle-right fa-lg pull-right mt-4"></i>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="media special">
+                    <a href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_jobtype_param=7" target="_blank"></a>
+                    <img class="d-flex mr-3 pc" alt="接客・サービス" src="https://olp.co.jp/assets/img/member/search/cover07.jpg" width="50">
+                    <div class="media-body">
+                      <p class="text-primary">接客・サービス</p>
+                      <ul class="list-inline small">
+                        <li class="list-inline-item">アミューズメントスタッフ</li>
+                        <li class="list-inline-item">ホテルスタッフ</li>
+                        <li class="list-inline-item">など</li>
+                      </ul>
+                    </div>
+                    <i class="fa fa-fw text-primary fa-check-square-o fa-angle-right fa-lg pull-right mt-4"></i>
+                  </div>
+                </td>
+                <td>
+                  <div class="media special">
+                    <a href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_jobtype_param=8" target="_blank"></a>
+                    <img class="d-flex mr-3 pc" alt="飲食・フード" src="https://olp.co.jp/assets/img/member/search/cover08.jpg" width="50">
+                    <div class="media-body">
+                      <p class="text-primary">飲食・フード</p>
+                      <ul class="list-inline small">
+                        <li class="list-inline-item">カフェ</li>
+                        <li class="list-inline-item">居酒屋</li>
+                        <li class="list-inline-item">ダイニングバー</li>
+                        <li class="list-inline-item">など</li>
+                      </ul>
+                    </div>
+                    <i class="fa fa-fw text-primary fa-check-square-o fa-angle-right fa-lg pull-right mt-4"></i>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="media special">
+                    <a href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_jobtype_param=9" target="_blank"></a>
+                    <img class="d-flex mr-3 pc" alt="軽作業" src="https://olp.co.jp/assets/img/member/search/cover09.jpg" width="50">
+                    <div class="media-body">
+                      <p class="text-primary">軽作業</p>
+                      <ul class="list-inline small">
+                        <li class="list-inline-item">ピッキング</li>
+                        <li class="list-inline-item">倉庫管理</li>
+                        <li class="list-inline-item">資材搬入</li>
+                        <li class="list-inline-item">清掃スタッフ</li>
+                        <li class="list-inline-item">など</li>
+                      </ul>
+                    </div>
+                    <i class="fa fa-fw text-primary fa-check-square-o fa-angle-right fa-lg pull-right mt-4"></i>
+                  </div>
+                </td>
+                <td>
+                  <div class="media special">
+                    <a href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_jobtype_param=10" target="_blank"></a>
+                    <img class="d-flex mr-3 pc" alt="製造" src="https://olp.co.jp/assets/img/member/search/cover10.jpg" width="50">
+                    <div class="media-body">
+                      <p class="text-primary">製造</p>
+                      <ul class="list-inline small">
+                        <li class="list-inline-item">製造スタッフ</li>
+                        <li class="list-inline-item">食品製造スタッフ</li>
+                        <li class="list-inline-item">機械オペレーション</li>
+                        <li class="list-inline-item">溶接</li>
+                        <li class="list-inline-item">塗装</li>
+                        <li class="list-inline-item">検査</li>
+                        <li class="list-inline-item">品質チェック</li>
+                        <li class="list-inline-item">など</li>
+                      </ul>
+                    </div>
+                    <i class="fa fa-fw text-primary fa-check-square-o fa-angle-right fa-lg pull-right mt-4"></i>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="media special">
+                    <a href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_jobtype_param=11" target="_blank"></a>
+                    <img class="d-flex mr-3 pc" alt="配送・ドライバー" src="https://olp.co.jp/assets/img/member/search/cover11.jpg" width="50">
+                    <div class="media-body">
+                      <p class="text-primary">配送・ドライバー</p>
+                      <ul class="list-inline small">
+                        <li class="list-inline-item">配送</li>
+                        <li class="list-inline-item">ドライバー</li>
+                        <li class="list-inline-item">など</li>
+                      </ul>
+                    </div>
+                    <i class="fa fa-fw text-primary fa-check-square-o fa-angle-right fa-lg pull-right mt-4"></i>
+                  </div>
+                </td>
+                <td>
+                  <div class="media special">
+                    <a href="https://www.olp.co.jp/medical/" target="_blank"></a>
+                    <img class="d-flex mr-3 pc" alt="医療・介護・福祉・保育・栄養士" src="https://olp.co.jp/assets/img/member/search/cover12.jpg" width="50">
+                    <div class="media-body">
+                      <p class="text-primary">医療・介護・福祉・保育・栄養士</p>
+                      <ul class="list-inline small">
+                        <li class="list-inline-item">正看護師</li>
+                        <li class="list-inline-item">准看護師</li>
+                        <li class="list-inline-item">看護助手</li>
+                        <li class="list-inline-item">ヘルパー1級・2級</li>
+                        <li class="list-inline-item">介護福祉士</li>
+                        <li class="list-inline-item">医療事務</li>
+                        <li class="list-inline-item">登録販売者</li>
+                        <li class="list-inline-item">など</li>
+                      </ul>
+                    </div>
+                    <i class="fa fa-fw text-primary fa-check-square-o fa-angle-right fa-lg pull-right mt-4"></i>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="media special">
+                    <a href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_jobtype_param=15,16" target="_blank"></a>
+                    <img class="d-flex mr-3 pc" alt="農業・酪農・漁業・水産" src="https://olp.co.jp/assets/img/member/search/cover13.jpg" width="50">
+                    <div class="media-body">
+                      <p class="text-primary">農業・酪農・漁業・水産</p>
+                      <ul class="list-inline small">
+                        <li class="list-inline-item">収穫補助</li>
+                        <li class="list-inline-item">農場整地</li>
+                        <li class="list-inline-item">仕分け</li>
+                        <li class="list-inline-item">水産物加工</li>
+                        <li class="list-inline-item">パック詰め</li>
+                        <li class="list-inline-item">など</li>
+                      </ul>
+                    </div>
+                    <i class="fa fa-fw text-primary fa-check-square-o fa-angle-right fa-lg pull-right mt-4"></i>
+                  </div>
+                </td>
+                <td>
+                  <div class="media special">
+                    <a href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_jobtype_param=14" target="_blank"></a>
+                    <img class="d-flex mr-3 pc" alt="美容・ヘルスケア・その他専門職" src="https://olp.co.jp/assets/img/member/search/cover14.jpg" width="50">
+                    <div class="media-body">
+                      <p class="text-primary">美容・ヘルスケア・その他専門職</p>
+                      <ul class="list-inline small">
+                        <li class="list-inline-item">エステ</li>
+                        <li class="list-inline-item">電気施工管理</li>
+                        <li class="list-inline-item">施工管理</li>
+                        <li class="list-inline-item">建築設計</li>
+                        <li class="list-inline-item">イラストレーター</li>
+                        <li class="list-inline-item">コンサルタント</li>
+                        <li class="list-inline-item">自動車整備士</li>
+                        <li class="list-inline-item">など</li>
+                      </ul>
+                    </div>
+                    <i class="fa fa-fw text-primary fa-check-square-o fa-angle-right fa-lg pull-right mt-4"></i>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

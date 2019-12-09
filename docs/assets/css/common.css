@@ -1,0 +1,135 @@
+/* パソコンで見たときは"pc"のclassがついた画像が表示される */
+.pc {
+  display: block !important;
+}
+
+.sp {
+  display: none !important;
+}
+
+/* スマートフォンで見たときは"sp"のclassがついた画像が表示される */
+@media only screen and (max-width: 767px) {
+  .pc {
+    display: none !important;
+  }
+  .sp {
+    display: block !important;
+  }
+}
+
+.alpha a:hover img {
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+  -ms-filter: "alpha(opacity=70)";
+}
+
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px !important;
+  }
+}
+
+/* グローバルメニューを上で止める */
+.site-header{
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  width: 100%;
+  z-index: 100;
+}
+.site-header.fixed{
+    position: fixed;
+    top: 0;
+}
+
+/* グローバルメニュー リンク色変更 */
+.site-header a:link {
+    color: #000000 ;
+}
+.site-header a:visited {
+    color: #000000 ;
+}
+.site-header a:hover {
+    color: #F00038 ;
+}
+
+/* divすべてをaタグでくくるよ */
+.special {
+  position: relative;
+  z-index: 1;
+  /* 必要であればリンク要素の重なりのベース順序指定 */
+}
+
+.special a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-indent: -999px;
+  z-index: 2;
+  /* 必要であればリンク要素の重なりのベース順序指定 */
+}
+
+.special:hover {
+  filter: alpha(opacity=70);
+  /* IE 6,7*/
+  -ms-filter: "alpha(opacity=70)";
+  /* IE 8,9 */
+  -moz-opacity: 0.7;
+  /* FF , Netscape */
+  -khtml-opacity: 0.7;
+  /* Safari 1.x */
+  opacity: 0.7;
+  zoom: 1;
+  /*IE*/
+}
+
+
+/* ガターの溝をなくす */
+.no-gutter > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
+}
+
+#map {
+  height: 650px;
+  z-index: 1;
+}
+
+/* テーブルのレスポンシブ トップページ */
+.col-head-type1 {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.col-head-type1 th,
+.col-head-type1 td {
+  border: 1px solid #dbe1e8;
+  padding: 8px;
+}
+
+.col-head-type1 th {
+  background: #f9fafc;
+  text-align: left;
+  width: 150px;
+}
+
+@media only screen and (max-width: 800px) {
+  .col-head-type1 tr,
+  .col-head-type1 th,
+  .col-head-type1 td {
+    display: block;
+    width: auto;
+  }
+
+  .col-head-type1 tr:first-child {
+    border-top: 1px solid #dbe1e8;
+  }
+
+  .col-head-type1 th,
+  .col-head-type1 td {
+    border-top: none;
+  }
+}
