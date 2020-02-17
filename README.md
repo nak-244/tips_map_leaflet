@@ -135,3 +135,14 @@
 ## 実行結果
 
 [githubPAGE](https://nak-244.github.io/tips_map_leaflet/)
+
+
+## ファイルを自前で揃えた方がいろいろと安心
+itemsフォルダの内容をすべてアップロードして、下記2つのファイルにリンク設定。
+
+~~~ html
+<link rel="stylesheet" href="/path/to/leaflet.css" />
+<script src="/path/to/leaflet.js"></script>
+~~~
+
+items内のapp.jsを編集するところに変更はなし。
